@@ -17,4 +17,4 @@ postRun:
      command:
         - yarn --version
 nodeVersion: 14.16.1
-version: 1.0
+version: 1.0.0
