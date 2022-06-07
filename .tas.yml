@@ -12,7 +12,7 @@ preMerge:
     - "./i18n/ucd/spec/*.js"
 preRun:
      command:
-        - wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz
+        - curl -o Python-3.8.3.tar.gz https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz
         - tar -zxvf Python-3.8.3.tar.gz
         - cd Python-3.8.3 && mkdir ~/.localpython && ./configure --prefix=/home/nucleus/.localpython
         - make && make install
