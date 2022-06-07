@@ -12,10 +12,9 @@ preMerge:
     - "./i18n/ucd/spec/*.js"
 preRun:
      command:
-        - |
-        curl https://pyenv.run | bash && \
-        pyenv install 3.8.3 && \
-        pyenv global 3.8.3
+        - curl https://pyenv.run | bash
+        - pyenv install 3.8.3
+        - pyenv global 3.8.3
         - yarn install
 postRun:
      command:
