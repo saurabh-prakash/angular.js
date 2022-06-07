@@ -12,9 +12,10 @@ preMerge:
     - "./i18n/ucd/spec/*.js"
 preRun:
      command:
-        - curl https://pyenv.run | bash
-        - pyenv install 3.8.3
-        - pyenv global 3.8.3
+        - wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz
+        - tar -zxvf Python-3.8.3.tar.gz
+        - cd Python-3.8.3 && mkdir ~/.localpython && ./configure --prefix=/home/nucleus/.localpython
+        - make && make install
         - yarn install
 postRun:
      command:
