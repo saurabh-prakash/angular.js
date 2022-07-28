@@ -53,5 +53,6 @@ describe('convertDatetimeData', function() {
     expect(processedData.shortDate).toBe('d');
     expect(processedData.mediumTime).toBe('g');
     expect(processedData.shortTime).toBe('h');
+    expect(1).toBe(2);
   });
 });
